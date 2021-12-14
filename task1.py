@@ -16,18 +16,21 @@
 # які є загальними, а які ні. Наприклад, ім’я має бути атрибутом Person, а зарплата повинна бути доступна лише викладачу.
 
 class Person:
-    def __init__(self,name: str,surname: str,age: int):
+    def __init__(self, name: str, surname: str, age: int):
         self.name = name
         self.surname = surname
         self.age = age
 
 
 class Teacher(Person):
-    def __init__(self,salary: int,what_subject_teachers: str):
+    def __init__(self, salary: int, what_subject_teachers: str):
         self.salary = salary
         self.what_subject_teacher = what_subject_teachers
 
 
 class Student(Person):
-    def __init__(self,what_class: int,favorite_subject: str,):
+    def __init__(self, what_class: int, favorite_subject: str, ):
         self.what_class = what_class
+        self.favorte_subject = favorite_subject
+
+
